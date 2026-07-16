@@ -9,7 +9,8 @@ import { Component } from '@angular/core';
 export class Livro {
 
   livro = {
-    titulo: "As ondas",
-    autoria: "Virginia Woolf"
+    titulo: "O Sol é Para Todos",
+    autoria: "Harper Lee",
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7XegWPObYY5IWw61xvlZaJ0w4lLYAKA6JJQ8dyTPuCg&s=10"
   }
 }
