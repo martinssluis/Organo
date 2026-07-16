@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Rodape } from './rodape';
+import { RodapeComponent } from './rodape.component';
 
-describe('Rodape', () => {
-  let component: Rodape;
-  let fixture: ComponentFixture<Rodape>;
+describe('RodapeComponent', () => {
+  let component: RodapeComponent;
+  let fixture: ComponentFixture<RodapeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Rodape],
+      imports: [RodapeComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(Rodape);
+    fixture = TestBed.createComponent(RodapeComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

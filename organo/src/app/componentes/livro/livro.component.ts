@@ -3,10 +3,10 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-livro',
   imports: [],
-  templateUrl: './livro.html',
-  styleUrl: './livro.css',
+  templateUrl: './livro.component.html',
+  styleUrl: './livro.component.css',
 })
-export class Livro {
+export class LivroComponent {
 
   alterarFavorito(){
     this.livro.favorito = !this.livro.favorito;
