@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Livro } from './livro';
 
 @Component({
   selector: 'app-livro',
@@ -12,10 +13,11 @@ export class LivroComponent {
     this.livro.favorito = !this.livro.favorito;
   }
 
-  livro = {
+  livro: Livro = {
     titulo: "O Sol é Para Todos",
     autoria: "Harper Lee",
     favorito: false,
+    genero: "Romance",
     imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7XegWPObYY5IWw61xvlZaJ0w4lLYAKA6JJQ8dyTPuCg&s=10"
   }
 }
