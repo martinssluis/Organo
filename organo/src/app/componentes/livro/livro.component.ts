@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { Livro } from './livro';
 
 @Component({
@@ -9,15 +9,11 @@ import { Livro } from './livro';
 })
 export class LivroComponent {
 
+  livro = input.required<Livro>();
+
   alterarFavorito(){
-    this.livro.favorito = !this.livro.favorito;
+    this.livro().favorito = !this.livro().favorito;
   }
 
-  livro: Livro = {
-    titulo: "O Sol é Para Todos",
-    autoria: "Harper Lee",
-    favorito: false,
-    genero: "Romance",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7XegWPObYY5IWw61xvlZaJ0w4lLYAKA6JJQ8dyTPuCg&s=10"
-  }
+
 }
