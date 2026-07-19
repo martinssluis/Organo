@@ -10,7 +10,6 @@ import { GeneroLiterarioComponent } from './componentes/genero-literario/genero-
     CabecalhoComponent,
     RodapeComponent,
     ListaLivrosComponent,
-    GeneroLiterarioComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
